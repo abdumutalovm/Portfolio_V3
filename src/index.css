@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground overflow-x-hidden;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-4 py-16 md:py-24;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold mb-2;
+}
+
+.section-subtitle {
+  @apply text-foreground-500 mb-12 max-w-2xl;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.skill-tag {
+  @apply px-4 py-2 rounded-md bg-content2 text-foreground-700 text-sm transition-all hover:bg-content3 hover:scale-105;
+}
