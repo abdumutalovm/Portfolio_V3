@@ -1,6 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardBody, Input, Textarea, Button, addToast } from "@heroui/react";
+import {
+  Card,
+  CardBody,
+  Input,
+  Textarea,
+  Button,
+  addToast,
+} from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 export const Contact: React.FC = () => {
@@ -12,7 +19,7 @@ export const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       addToast({
@@ -31,19 +38,19 @@ export const Contact: React.FC = () => {
     {
       icon: "lucide:mail",
       label: "Email",
-      value: "john.developer@example.com",
-      href: "mailto:john.developer@example.com",
+      value: "mirziyodabdumutalov83@gmail.com",
+      href: "mirziyodabdumutalov83@gmail.com",
     },
     {
       icon: "lucide:map-pin",
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Fergana, Fergana Region, Uzbekistan",
       href: "https://maps.google.com/?q=San+Francisco",
     },
     {
       icon: "lucide:phone",
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+998916691341 ",
       href: "tel:+15551234567",
     },
   ];
@@ -68,7 +75,8 @@ export const Contact: React.FC = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach out!
+            Have a project in mind or want to collaborate? Feel free to reach
+            out!
           </p>
         </motion.div>
 
@@ -82,7 +90,9 @@ export const Contact: React.FC = () => {
           >
             <Card className="bg-content2 h-full" shadow="sm">
               <CardBody className="p-6">
-                <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-xl font-semibold mb-6">
+                  Contact Information
+                </h3>
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
                     <a
@@ -159,7 +169,9 @@ export const Contact: React.FC = () => {
           >
             <Card className="bg-content2 h-full" shadow="sm">
               <CardBody className="p-6">
-                <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
+                <h3 className="text-xl font-semibold mb-6">
+                  Send Me a Message
+                </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <Input
                     label="Name"
@@ -194,7 +206,9 @@ export const Contact: React.FC = () => {
                     radius="full"
                     className="w-full"
                     isLoading={isSubmitting}
-                    endContent={!isSubmitting && <Icon icon="lucide:send" width={18} />}
+                    endContent={
+                      !isSubmitting && <Icon icon="lucide:send" width={18} />
+                    }
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>

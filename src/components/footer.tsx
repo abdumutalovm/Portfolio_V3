@@ -23,7 +23,10 @@ export const Footer: React.FC = () => {
           className="grid grid-cols-1 md:grid-cols-4 gap-8"
         >
           <div className="md:col-span-2">
-            <a href="#" className="text-2xl font-semibold flex items-center gap-2 mb-4">
+            <a
+              href="#"
+              className="text-2xl font-semibold flex items-center gap-2 mb-4"
+            >
               <span className="gradient-text">Dev</span>
               <span>Portfolio</span>
             </a>
@@ -79,22 +82,34 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-foreground-500 hover:text-primary transition-colors">
+                <a
+                  href="#about"
+                  className="text-foreground-500 hover:text-primary transition-colors"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-foreground-500 hover:text-primary transition-colors">
+                <a
+                  href="#projects"
+                  className="text-foreground-500 hover:text-primary transition-colors"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-foreground-500 hover:text-primary transition-colors">
+                <a
+                  href="#skills"
+                  className="text-foreground-500 hover:text-primary transition-colors"
+                >
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-foreground-500 hover:text-primary transition-colors">
+                <a
+                  href="#contact"
+                  className="text-foreground-500 hover:text-primary transition-colors"
+                >
                   Contact
                 </a>
               </li>
@@ -106,19 +121,25 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-foreground-500">
                 <Icon icon="lucide:mail" width={16} />
-                <a href="mailto:john.developer@example.com" className="hover:text-primary transition-colors">
-                  john.developer@example.com
+                <a
+                  href=" mirziyodabdumutalov83@gmail.com"
+                  className="hover:text-primary transition-colors w-10"
+                >
+                  mirziyodabdumutalov83@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-foreground-500">
                 <Icon icon="lucide:phone" width={16} />
-                <a href="tel:+15551234567" className="hover:text-primary transition-colors">
-                  +1 (555) 123-4567
+                <a
+                  href="tel:+998916691341"
+                  className="hover:text-primary transition-colors"
+                >
+                  +998916691341
                 </a>
               </li>
               <li className="flex items-center gap-2 text-foreground-500">
                 <Icon icon="lucide:map-pin" width={16} />
-                <span>San Francisco, CA</span>
+                <span>Fergana, Uzbekistan</span>
               </li>
             </ul>
           </div>
@@ -135,13 +156,19 @@ export const Footer: React.FC = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-foreground-500 text-sm">
-            © {currentYear} John Developer. All rights reserved.
+            © {currentYear} Mirziyod Developer. All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="text-foreground-500 hover:text-primary text-sm transition-colors">
+            <a
+              href="#"
+              className="text-foreground-500 hover:text-primary text-sm transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-foreground-500 hover:text-primary text-sm transition-colors">
+            <a
+              href="#"
+              className="text-foreground-500 hover:text-primary text-sm transition-colors"
+            >
               Terms of Service
             </a>
           </div>

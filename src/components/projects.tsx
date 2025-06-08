@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { Card, CardBody, CardFooter, Button, Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { ProjectCard } from "./project-card";
+import housestuff from "../assets/homestuff_web.png";
+import spotify from "../assets/spotify_web.png";
+import applestore from "../assets/apple_web.png";
+import flag from "../assets/flag_web.png";
+import technostore from "../assets/technostorewe.png";
 
 export interface Project {
   id: number;
@@ -18,39 +23,49 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive dashboard for e-commerce analytics with real-time data visualization and inventory management.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
-      demoUrl: "https://demo.com/ecommerce",
-      codeUrl: "https://github.com/johndoe/ecommerce-dashboard",
+      title: "Apple Store",
+      description: "A simple store for apple users with minimalistic design",
+      image: applestore,
+      tags: ["React", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://apple-six-murex.vercel.app/",
+      codeUrl: "https://github.com/abdumutalovm/apple",
     },
     {
       id: 2,
-      title: "Social Media App",
-      description: "A modern social media platform with real-time messaging, post sharing, and user interactions.",
-      image: "https://img.heroui.chat/image/ai?w=600&h=400&u=2",
-      tags: ["React Native", "Firebase", "Redux", "Express"],
-      demoUrl: "https://demo.com/social",
-      codeUrl: "https://github.com/johndoe/social-media-app",
+      title: "Spotify",
+      description: "A clone of Spotify listen last trend musics and enjoy",
+      image: spotify,
+      tags: ["React", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://8-month-exam-kappa.vercel.app/",
+      codeUrl: "https://github.com/abdumutalovm/8-month-exam",
     },
     {
       id: 3,
-      title: "Task Management System",
-      description: "A collaborative task management tool with drag-and-drop interface, team assignments, and progress tracking.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-      tags: ["Vue.js", "GraphQL", "MongoDB", "Docker"],
-      demoUrl: "https://demo.com/tasks",
-      codeUrl: "https://github.com/johndoe/task-management",
+      title: "AudioPhile Audio Store",
+      description:
+        "A modern and more protective store for people who want to buy modern audio gadgets",
+      image: technostore,
+      tags: ["React", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://7-month-exam-kappa.vercel.app/login",
+      codeUrl: "https://github.com/abdumutalovm/7-month-exam",
     },
     {
       id: 4,
-      title: "Fitness Tracking App",
-      description: "A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.",
-      image: "https://img.heroui.chat/image/ai?w=600&h=400&u=4",
-      tags: ["Flutter", "Firebase", "TensorFlow", "Node.js"],
-      demoUrl: "https://demo.com/fitness",
-      codeUrl: "https://github.com/johndoe/fitness-tracker",
+      title: "World Flag",
+      description: "A flag finder include name, population, region and capital",
+      image: flag,
+      tags: ["React", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://5-month-exam-eight.vercel.app/",
+      codeUrl: "https://github.com/abdumutalovm/5-month-exam",
+    },
+    {
+      id: 5,
+      title: "House Store",
+      description: "A store for buy something for house",
+      image: housestuff,
+      tags: ["React", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://7-month-7-lesson.vercel.app/",
+      codeUrl: "https://github.com/abdumutalovm/7-month-7-lesson",
     },
   ];
 
@@ -80,11 +95,7 @@ export const Projects: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              index={index}
-            />
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
 

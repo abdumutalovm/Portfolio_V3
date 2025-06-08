@@ -20,8 +20,6 @@ export const Skills: React.FC = () => {
       name: "Frontend",
       skills: [
         { name: "React", icon: "logos:react" },
-        { name: "Vue.js", icon: "logos:vue" },
-        { name: "Angular", icon: "logos:angular-icon" },
         { name: "TypeScript", icon: "logos:typescript-icon" },
         { name: "JavaScript", icon: "logos:javascript" },
         { name: "HTML5", icon: "logos:html-5" },
@@ -30,38 +28,11 @@ export const Skills: React.FC = () => {
         { name: "SASS", icon: "logos:sass" },
       ],
     },
-    {
-      name: "Backend",
-      skills: [
-        { name: "Node.js", icon: "logos:nodejs-icon" },
-        { name: "Express", icon: "logos:express" },
-        { name: "Python", icon: "logos:python" },
-        { name: "Django", icon: "logos:django-icon" },
-        { name: "PHP", icon: "logos:php" },
-        { name: "Ruby", icon: "logos:ruby" },
-        { name: "Java", icon: "logos:java" },
-        { name: "GraphQL", icon: "logos:graphql" },
-        { name: "REST API", icon: "lucide:server" },
-      ],
-    },
-    {
-      name: "Database",
-      skills: [
-        { name: "MongoDB", icon: "logos:mongodb-icon" },
-        { name: "MySQL", icon: "logos:mysql" },
-        { name: "PostgreSQL", icon: "logos:postgresql" },
-        { name: "Redis", icon: "logos:redis" },
-        { name: "Firebase", icon: "logos:firebase" },
-        { name: "Supabase", icon: "logos:supabase-icon" },
-      ],
-    },
+
     {
       name: "DevOps & Tools",
       skills: [
         { name: "Git", icon: "logos:git-icon" },
-        { name: "Docker", icon: "logos:docker-icon" },
-        { name: "AWS", icon: "logos:aws" },
-        { name: "GitHub Actions", icon: "logos:github-actions" },
         { name: "Vercel", icon: "logos:vercel-icon" },
         { name: "Netlify", icon: "logos:netlify" },
         { name: "VS Code", icon: "logos:visual-studio-code" },
@@ -156,7 +127,9 @@ export const Skills: React.FC = () => {
           variants={fadeInUp}
           className="mt-16"
         >
-          <h3 className="text-xl font-semibold mb-6 text-center">Other Skills & Interests</h3>
+          <h3 className="text-xl font-semibold mb-6 text-center">
+            Other Skills & Interests
+          </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "UI/UX Design",
@@ -165,11 +138,6 @@ export const Skills: React.FC = () => {
               "SEO",
               "Accessibility",
               "Testing",
-              "CI/CD",
-              "Agile",
-              "Scrum",
-              "Technical Writing",
-              "Mentoring",
               "Open Source",
             ].map((skill) => (
               <motion.span

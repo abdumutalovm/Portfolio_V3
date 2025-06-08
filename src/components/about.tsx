@@ -45,8 +45,8 @@ export const About: React.FC = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl font-bold">5+</span>
-                <span className="text-white text-xs ml-1">Years Exp.</span>
+                <span className="text-white text-xl font-bold ml-2">8+</span>
+                <span className="text-white text-xs ml-1">Months Exp.</span>
               </div>
             </div>
           </motion.div>
@@ -60,16 +60,18 @@ export const About: React.FC = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold">
-              A passionate Full Stack Developer based in San Francisco, CA
+              A new FrontEnd Developer based in Ferghana, Uzbekistan
             </h3>
             <p className="text-foreground-500">
-              I'm a software developer with a passion for creating beautiful, functional, 
-              and user-centered digital experiences. With 5+ years of experience in web development, 
-              I am always looking for new and innovative ways to bring my clients' visions to life.
+              I'm a FrontEnd developer with a passion for creating beautiful,
+              functional, and user-centered digital experiences. With 8+ month
+              of experience in web development, I am always looking for new and
+              innovative ways to bring my clients' visions to life.
             </p>
             <p className="text-foreground-500">
-              I believe that design is about more than just making things look pretty – it's about solving problems 
-              and creating intuitive, enjoyable experiences for users.
+              I believe that design is about more than just making things look
+              pretty – it's about solving problems and creating intuitive,
+              enjoyable experiences for users.
             </p>
 
             <Divider className="my-6" />
@@ -79,11 +81,15 @@ export const About: React.FC = () => {
                 <CardBody className="p-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-md">
-                      <Icon icon="lucide:code" className="text-primary" width={24} />
+                      <Icon
+                        icon="lucide:code"
+                        className="text-primary"
+                        width={24}
+                      />
                     </div>
                     <div>
                       <p className="font-medium">Development</p>
-                      <p className="text-xs text-foreground-500">Web & Mobile</p>
+                      <p className="text-xs text-foreground-500">Web</p>
                     </div>
                   </div>
                 </CardBody>
@@ -93,11 +99,17 @@ export const About: React.FC = () => {
                 <CardBody className="p-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-md">
-                      <Icon icon="lucide:layout" className="text-primary" width={24} />
+                      <Icon
+                        icon="lucide:layout"
+                        className="text-primary"
+                        width={24}
+                      />
                     </div>
                     <div>
                       <p className="font-medium">UI/UX Design</p>
-                      <p className="text-xs text-foreground-500">User-Centered</p>
+                      <p className="text-xs text-foreground-500">
+                        User-Centered
+                      </p>
                     </div>
                   </div>
                 </CardBody>
@@ -107,11 +119,11 @@ export const About: React.FC = () => {
                 <CardBody className="p-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-md">
-                      <Icon icon="lucide:database" className="text-primary" width={24} />
-                    </div>
-                    <div>
-                      <p className="font-medium">Backend</p>
-                      <p className="text-xs text-foreground-500">API & Database</p>
+                      <Icon
+                        icon="lucide:database"
+                        className="text-primary"
+                        width={24}
+                      />
                     </div>
                   </div>
                 </CardBody>
@@ -121,11 +133,11 @@ export const About: React.FC = () => {
                 <CardBody className="p-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-md">
-                      <Icon icon="lucide:cloud" className="text-primary" width={24} />
-                    </div>
-                    <div>
-                      <p className="font-medium">DevOps</p>
-                      <p className="text-xs text-foreground-500">CI/CD & Cloud</p>
+                      <Icon
+                        icon="lucide:cloud"
+                        className="text-primary"
+                        width={24}
+                      />
                     </div>
                   </div>
                 </CardBody>

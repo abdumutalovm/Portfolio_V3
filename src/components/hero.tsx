@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
+import avatar from "../assets/avatar.jpg";
 
 export const Hero: React.FC = () => {
   return (
@@ -15,14 +16,15 @@ export const Hero: React.FC = () => {
         >
           <p className="text-primary mb-2">Hello, I'm</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="gradient-text">John Developer</span>
+            <span className="gradient-text">Mirziyod Developer</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-foreground-600 mb-6">
-            Full Stack Developer & UI/UX Enthusiast
+            FrontEnd Developer
           </h2>
           <p className="text-foreground-500 max-w-lg mb-8">
             I build exceptional digital experiences with modern technologies.
-            Focused on creating elegant, efficient, and user-centered applications.
+            Focused on creating elegant, efficient, and user-centered
+            applications.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button
@@ -89,9 +91,9 @@ export const Hero: React.FC = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-primary-400/20 to-primary-600/20 absolute animate-float"></div>
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-content3 relative z-10">
               <img
-                src="https://img.heroui.chat/image/avatar?w=400&h=400&u=developer"
+                src={avatar}
                 alt="Developer Portrait"
-                className="w-full h-full object-cover"
+                className=" object-cover"
               />
             </div>
           </div>
