@@ -45,7 +45,7 @@ export const Contact: React.FC = () => {
       icon: "lucide:map-pin",
       label: "Location",
       value: "Fergana, Fergana Region, Uzbekistan",
-      href: "https://maps.app.goo.gl/Nv1jWnxrXBjKyRAFA",
+      href: "https://maps.app.goo.gl/e9UXa97MG7BjrDVr9",
     },
     {
       icon: "lucide:phone",
