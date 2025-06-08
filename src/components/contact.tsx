@@ -45,13 +45,13 @@ export const Contact: React.FC = () => {
       icon: "lucide:map-pin",
       label: "Location",
       value: "Fergana, Fergana Region, Uzbekistan",
-      href: "https://maps.google.com/?q=San+Francisco",
+      href: "https://maps.app.goo.gl/Nv1jWnxrXBjKyRAFA",
     },
     {
       icon: "lucide:phone",
       label: "Phone",
       value: "+998916691341 ",
-      href: "tel:+15551234567",
+      href: "tel:+998916691341",
     },
   ];
 
